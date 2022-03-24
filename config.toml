@@ -1,4 +1,4 @@
-baseURL = 'http://10.10.11.242:1313/'
+baseURL = 'https://dainty-alpaca-0504c1.netlify.app/'
 languageCode = 'en-us'
 DefaultContentLanguage = "en"
 title = 'My New Hugo Site'

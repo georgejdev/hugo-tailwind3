@@ -1,0 +1,59 @@
+baseURL = 'http://10.10.11.242:1313/'
+languageCode = 'en-us'
+DefaultContentLanguage = "en"
+title = 'My New Hugo Site'
+themes = "hugo-tailwind3-starter"
+
+
+# Site Settings
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = false
+canonifyURLs = true
+
+# Author and Social Details
+[params]
+  description = "A minimal Hugo template using Tailwind 3 and optimized for SEO."
+  author = "Benjamin Price"
+  github = "https://github.com/BenjaminPrice"
+  facebook = "https://facebook.com/benpricedev"
+  og_image = "/images/og.png"
+  sitename = "Hugo & Tailwind 3 Template"
+  twitter = "@benpricedev"
+  # The following should be relative to the root domain or abosolute URL
+  favicon = ""
+  publisherIcon = "" # Higher resolution version of favicon (Optional)
+  articleSections = ['blog', 'posts']
+
+# Language Weights
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+
+  [languages.ja]
+    languageName = "Japanese"
+    languageCode = "ja"
+    weight = 2
+
+
+# Template Settings
+disableKinds = ["page", "section", "taxonomy", "term", "taxonomyTerm"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[module]
+  [module.hugoVersion]
+    min = "0.93.2"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+# Used by PurgeCSS
+writeStats = true

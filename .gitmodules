@@ -1,0 +1,3 @@
+[submodule "themes/hugo-tailwind3-starter"]
+	path = themes/hugo-tailwind3-starter
+	url = https://github.com/BenjaminPrice/hugo-tailwind3-starter.git
